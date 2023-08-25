@@ -5,6 +5,8 @@ import com.katostevenmubiru.microservice.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class OrderService {
 
@@ -28,4 +30,8 @@ public class OrderService {
             return "Order not found";
         }
     }
+
+    /*public List<Order> getAllOrders() {
+        return orderRepository.findAll();
+    }*/
 }
